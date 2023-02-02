@@ -13,6 +13,8 @@
 		72666D29298AF27F00E59818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72666D28298AF27F00E59818 /* Assets.xcassets */; };
 		72666D2C298AF27F00E59818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72666D2A298AF27F00E59818 /* LaunchScreen.storyboard */; };
 		72666D37298AF8A100E59818 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72666D36298AF8A100E59818 /* Reminder.swift */; };
+		72666D3A298BEC0800E59818 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72666D39298BEC0800E59818 /* Date+Today.swift */; };
+		72666D3C298BEF8A00E59818 /* ReminderListViewController+DateSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72666D3B298BEF8A00E59818 /* ReminderListViewController+DateSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		72666D2B298AF27F00E59818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72666D2D298AF27F00E59818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72666D36298AF8A100E59818 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		72666D39298BEC0800E59818 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		72666D3B298BEF8A00E59818 /* ReminderListViewController+DateSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DateSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		72666D1E298AF27C00E59818 /* IOSAppDevTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				72666D38298BEBED00E59818 /* ListViewController */,
 				72666D33298AF32200E59818 /* Application */,
 				72666D35298AF86000E59818 /* Models */,
-				72666D23298AF27C00E59818 /* ReminderListViewController.swift */,
 				72666D34298AF52B00E59818 /* SupportingFiles */,
 			);
 			path = IOSAppDevTutorial;
@@ -87,8 +91,18 @@
 			isa = PBXGroup;
 			children = (
 				72666D36298AF8A100E59818 /* Reminder.swift */,
+				72666D39298BEC0800E59818 /* Date+Today.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		72666D38298BEBED00E59818 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72666D23298AF27C00E59818 /* ReminderListViewController.swift */,
+				72666D3B298BEF8A00E59818 /* ReminderListViewController+DateSource.swift */,
+			);
+			path = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72666D3A298BEC0800E59818 /* Date+Today.swift in Sources */,
+				72666D3C298BEF8A00E59818 /* ReminderListViewController+DateSource.swift in Sources */,
 				72666D24298AF27C00E59818 /* ReminderListViewController.swift in Sources */,
 				72666D20298AF27C00E59818 /* AppDelegate.swift in Sources */,
 				72666D22298AF27C00E59818 /* SceneDelegate.swift in Sources */,
